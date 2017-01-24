@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% raw %}{% extends "base.html" %}
 {% load wagtailcore_tags wagtailimages_tags %}
 
 {% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}
@@ -46,4 +46,4 @@
     the parent within the template.
 
     We do this by defining the parent_url on the SkillsPage model
-{% endcomment %}
+{% endcomment %}{% endraw %}

@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% raw %}{% extends "base.html" %}
 {% load wagtailcore_tags wagtailimages_tags %}
 
 {% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}
@@ -41,4 +41,4 @@
             {{ page.body }}
         </main>
 </content>
-{% endblock %}
+{% endblock %}{% endraw %}
