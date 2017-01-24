@@ -4,29 +4,16 @@ Pre-beginner Wagtail
 A not-even-built-yet version of Wagtail. Used for a workshop where people turn it into something like [Beginner Wagtail](https://github.com/heymonkeyriot/beginner-wagtail/)
 
 # Installation locally
-It should be sufficient to simply run `vagrant up` to load the project.
+The Cookiecutter project can be built with the following commands
+```sh
+# Install Cookiecutter
+- pip install cookiecutter
+- cookiecutter https://github.com/heymonkeyriot/pre-beginner-wagtail.git
+# You'll be prompted to give the project a name
+# You'll be prompted to give the repository a name
+- cd {{your_project_name}}
+- vagrant up
 ```
-vagrant up
-vagrant ssh
-python manage.py runserver 0.0.0.0:8000
-```
-
-### Loading mock data
-You can't load any data until you've built your models, so as far as you know there's no mock data!
-
-### Troubleshooting local installation problems
-On the `vagrant up` command the vagrant/provision.sh file will run
-
-```
-pip install -r requirements.txt
-python manage.py makemigrations
-python manage.py migrate
-```
-
-Occassionally (because the computer has gone to sleep etc) that process may not run smoothly. In that instance wait for `vagrant up` to complete, then `vagrant ssh` into the VM and run the above commands.
-
-# Installation remotely
-This project isn't designed to be deployed to a remote server, but rather for local playing and testing. An upcoming release will allow it to be deployed remotely.
 
 # Apps included
 If apps with empty models count as apps
