@@ -5,16 +5,6 @@
 
 {% block content %}
 <content>
-		{{ page.title }}
-
-		{% image page.image width-400 as photo %}
-              <img src="{{ photo.url }}" width="{{ photo.width }}" height="{{ photo.height }}" alt="{{ photo.alt }}" class="img-thumbnail" />
-        {# end image #}
-        
-        <ul class="people">
-        {% for people in page.skills_person_relationship.all  %}
-        	<li><a href="{{people.url}}">{{ people.title }}</a></li>
-        {% endfor %}
-        </ul>
+		<h1>{{ page.title }}</h1>
 </content>
 {% endblock %}{% endraw %}
