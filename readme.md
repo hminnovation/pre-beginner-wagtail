@@ -8,7 +8,7 @@ The Cookiecutter project can be built with the following commands
 ```sh
 # Install Cookiecutter
 - pip install cookiecutter
-- cookiecutter https://github.com/heymonkeyriot/beginner-wagtail.git
+- cookiecutter https://github.com/heymonkeyriot/pre-beginner-wagtail.git
 # You'll be prompted to give the project a name
 # You'll be prompted to give the repository a name
 - cd {{your_project_name}}
