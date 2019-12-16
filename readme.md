@@ -1,3 +1,4 @@
+Note: this project hasn't been updated since 2017 and is likely to break with the latest version of Wagtail.
 
 Pre-beginner Wagtail
 ==================
